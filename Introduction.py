@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="Klasifikasi Persona Anak",
+    page_icon="👋",
+)
+
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
 #GithubIcon {
@@ -8,10 +13,13 @@ hide_github_icon = """
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
-st.set_page_config(
-    page_title="Klasifikasi Persona Anak",
-    page_icon="👋",
-)
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
 st.title('Klasifikasi Gaya Belajar Anak')
 st.text('Selamat di aplikasi web untuk klasifikasi persona anak menggunakan child-based\npersona framework.')
