@@ -8,7 +8,7 @@ st.set_page_config(
 styl = f"""
     <style>
         .css-q16mip {
-            visibility: hidden;
+        visibility: hidden;
         }
     </style>
     """
